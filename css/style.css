@@ -1,0 +1,15 @@
+
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: top 0.3s;
+	background-color: ;
+
+}
+
+#navbar {
+
+	float: left;
+	display: block;
+}

@@ -8,46 +8,62 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-white.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <body id="myPage">
 
 <!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+<!-- <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-lightgray">Close
     <i class="fa fa-remove"></i>
   </a>
   <a href="#" class="w3-bar-item w3-button">Why Sarvatail</a>
   <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
+</nav> -->
 
 <!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
+<div class="w3-top"  id ="navbar">
+ <div class="w3-bar w3-theme-d2 w3-left-align" >
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-lightgray w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-LightGray"><i class="fa fa-home w3-margin-right"></i><img class="w3-image" src="img/Sarvatail_final.png" alt="logo" width="125" height="125"> </a>
   <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">About</a>
   <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">Why Sarvatail Point</a>
   <a href="#franchisee" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">Franchisee Requirements</a>
   <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">Team</a>
+  <a href="#investor" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">Investor</a>
   <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-lightgray">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
+    <!-- <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Investor <i class="fa fa-caret-down"></i></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
       <a href="#" class="w3-bar-item w3-button">Link</a>
       <a href="#" class="w3-bar-item w3-button">Link</a>
       <a href="#" class="w3-bar-item w3-button">Link</a>
     </div>
-  </div>
+  </div> -->
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-lightgray" title="Search"><i class="fa fa-search"></i></a>
  </div>
 
+
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  <div id="navbar" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
     <a href="#Work" class="w3-bar-item w3-button">Why Sarvatail Point</a>
-    <a href="#franchsee" class="w3-bar-item w3-button">Franchisee Requirements</a>
+    <a href="#franchisee" class="w3-bar-item w3-button">Franchisee Requirements</a>
     <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#investor" class="w3-bar-item w3-button">Investor</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     <a href="#" class="w3-bar-item w3-button">Search</a>
   </div>
+  <script >
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+</script>
+
 </div>
 
 <!-- Image Header -->
@@ -84,26 +100,28 @@
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="about">
 
 <div class="w3">
- <br>
- <br>
- <br> 
-<h2>About Us</h2>
-  <ul class="b">
+   
+<h2 class="w3-teal" >About Us</h2>
 
-    <li> Sarvatail has been formed by experienced professionals of the industry who are pioneers in the field of assisted e-commerce </li>
-    <li> We intend to bring in world class assisted e-commerce retail experience to the underserved parts of the country </li>
-    <li>  The core strength of Sarvatail is its partnerships with leading players in the industry through which we intend to deliver world class service to customers   </li>
-    <li> Our core philosophy is customer first and we promise to remain true to it for ever
-    </li>
+  <ul class="b" > 
 
+    <li style="color: black"> Sarvatail has been formed by experienced professionals of the industry who are pioneers in the field of assisted e-commerce </li> 
+    <li style="color: black"> We intend to bring in world class assisted e-commerce retail experience to the underserved parts of the country </li> 
+    <li style="color: black">  The core strength of Sarvatail is its partnerships with leading players in the industry through which we intend to deliver world class service to customers   </li> 
+    <li style="color: black"> Our core philosophy is customer first and we promise to remain true to it for ever
+    </li> 
+    <div class = "w3-row"> 
+      <div class = "w3-half"> 
+    <img src="img/store1.jpg" alt = "retail 1">
+    </div>
+    <div class = "w3-half"> 
+    <img src="img/store2.jpg" alt = "retail 2">
+    </div>
   </ul>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  
+
+</div>
 </div>
 
 
@@ -119,78 +137,60 @@
 <br>
 <br>
 <br>
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-<div class="w3-quarter">
-  <br>
-  <br>
-  <br>
-  <br>
-<h2>Sarvatail Point </h2>
-<p> Sarvatail brings you the opportunity to run physical store of a leading E-Commerce Company in the world! 
- </p>
-</div>
+<div class = "w3-container w3-padding-64 w3-center" id="work">
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/speaking-man.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
+ <h2 class = "w3-teal"> Why Sarvatail Point? </h2>
+ <div class = "w3-row"> <br>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/lotus.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
+  <div class = "w3-third">
+     <img src="img/store_icon.png" alt="store front" style="width:33%"> 
+    <h3> Amazon Store</h3>
+    <p> Opportunity to setup and run a flagship physical store of Amazon in your area</p>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/thinking-man.jpg" alt="outlet" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
   </div>
+
+  <div class = "w3-third">
+     <img src="img/logistics2.png" alt="logistics" style="width:33%"> 
+    <h3> Full BackEnd Support</h3>
+    <p> You focus customers, rest is taken care of by us! </p>
+
   </div>
-</div>
+
+  <div class = "w3-third">
+     <img src="img/insurance.jpg" alt="financial Products" style="width:33%"> 
+    <h3> Insurance</h3>
+    <p> Multiply your revenue by cross-selling Insurance and Loans to your customers</p>
+
+  </div>   
+
+ </div>
+  
+
+
 
 </div>
+
+
+
 
 <!-- Team Container -->
 
 
 <!-- Container -->
-<div class="w3-container" style="position:relative">
+<!-- <div class="w3-container" style="position:relative">
   <br>
   <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
   style="position:absolute;top:-28px;right:24px">+</a>
-</div>
+</div> -->
 
 <!-- Pricing Row -->
+<br><br><br><br><br><br>
 <div class="w3-row-padding w3-center w3-padding-64" id="franchisee">
   <br>
  
  
-    <h2>Requirements from Franchisee</h2>
+    <h2 class= "w3-teal">Requirements from Franchisee</h2>
     
     <div class="w3-center w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
@@ -212,28 +212,62 @@
       <br>
     </div>
 
-<br>
+<br><br>
+
+
+<!-- investor section -->
+ 
+<div class="w3-container w3-padding-64 w3-center" id="investor">
+  
+<h2 class = "w3-teal"> Investor </h2>
+<div class="w3-row">
+<p> Sarvtatil is looking for investors to partner in this exciting journey. <br>Pls connect with us on 9819613168 or 9967597473. <br>You can also reach us through email: corporate@sarvatail.com  </p> <br> <br><br><br><br> <br><br>
+
+</div>
+</div>
+<br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- team section -->
+
 <div class="w3-container w3-padding-64 w3-center" id="team">
   
-<h2>OUR TEAM</h2>
+<h2 class = "w3-teal">OUR TEAM</h2>
 <div class="w3-row"><br>
 
-<div class="w3-quarter">
+<div class="w3-third">
   <img src="img/sumit.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Sumit Jain</h3>
   <p> Founder - Technology and Finance</p>
 </div>
 
-<div class="w3-quarter">
+<div class="w3-third">
   <img src="img/Harish.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3> Harish Mani</h3>
   <p> Founder- Distribution Strategy and Operations </p>
 </div>
 
-<div class="w3-quarter">
-  <img src="/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3> XXXX </h3>
-  <p> Franchise Network </p>
+<div class="w3-third">
+  <img src="img/speaking-man.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3> Mr XYZ </h3>
+  <p> Founder-Franchise Network and operations </p>
 </div>
 
 
@@ -315,6 +349,11 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+<a href="https://www.freepik.com/free-photos-vectors/Infographic">Infographic vector created by freepik - www.freepik.com</a>
+<a href = "https://www.freepik.com/premium-vector/coins-money_4511479.htm#page=7&query=financial+products&position=20
+ > </a> 
+
 </script>
 
 </body>
